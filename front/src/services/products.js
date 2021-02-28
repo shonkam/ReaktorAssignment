@@ -1,19 +1,21 @@
 import axios from 'axios'
 
+const instance = axios.create()
+instance.defaults.timeout = 99999
 //const baseUrl = 'http://localhost:3001'
 
 const getGloves = () => {
-    const request = axios.get(`/products/gloves`, {timeout: 999999})
+    const request = instance.get(`/products/gloves`)
     return request.then(response => response.data)
 }
 
 const getFacemasks = () => {
-    const request = axios.get(`/products/facemasks`, {timeout: 999999})
+    const request = instance.get(`/products/facemasks`)
     return request.then(response => response.data)
 }
 
 const getBeanies = () => {
-    const request = axios.get(`/products/beanies`, {timeout: 999999})
+    const request = instance.get(`/products/beanies`)
     return request.then(response => response.data)
 }
 
