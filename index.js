@@ -34,7 +34,7 @@ async function getProductList(productType) {
     for (let i = 0; i < productManufacturersList.length; i++) {
         manuName = productManufacturersList[i]
         console.log(manuName)
-        response = await axios.get(`https://bad-api-assignment.reaktor.com/v2/availability/${manuName}`)
+        response = await axios.get(`https://bad-api-assignment.reaktor.com/v2/availability/${manuName}`, {timeout: 200000})
 
         //if request returns an empty array make a new request
         if (response.data.response === '[]') {
