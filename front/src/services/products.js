@@ -3,17 +3,17 @@ import axios from 'axios'
 //const baseUrl = 'http://localhost:3001'
 
 const getGloves = () => {
-    const request = axios.get(`/products/gloves`)
+    const request = axios.get(`/products/gloves`, {timeout: 999999})
     return request.then(response => response.data)
 }
 
 const getFacemasks = () => {
-    const request = axios.get(`/products/facemasks`)
+    const request = axios.get(`/products/facemasks`, {timeout: 999999})
     return request.then(response => response.data)
 }
 
 const getBeanies = () => {
-    const request = axios.get(`/products/beanies`)
+    const request = axios.get(`/products/beanies`, {timeout: 999999})
     return request.then(response => response.data)
 }
 
