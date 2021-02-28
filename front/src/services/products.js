@@ -1,19 +1,19 @@
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:3001'
+//const baseUrl = 'http://localhost:3001'
 
 const getGloves = () => {
-    const request = axios.get(`${baseUrl}/products/gloves`)
+    const request = axios.get(`/products/gloves`)
     return request.then(response => response.data)
 }
 
 const getFacemasks = () => {
-    const request = axios.get(`${baseUrl}/products/facemasks`)
+    const request = axios.get(`/products/facemasks`)
     return request.then(response => response.data)
 }
 
 const getBeanies = () => {
-    const request = axios.get(`${baseUrl}/products/beanies`)
+    const request = axios.get(`/products/beanies`)
     return request.then(response => response.data)
 }
 
