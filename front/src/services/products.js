@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create()
-instance.defaults.timeout = 99999
+instance.defaults.timeout = 9999999
 //const baseUrl = 'http://localhost:3001'
 
 const getGloves = () => {

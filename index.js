@@ -97,6 +97,7 @@ app.get('/products/beanies', async (request, response) => {
     }
 })
 
+setTimeout(getProductList, 9999999)
 
 const PORT = (process.env.PORT || 3001)
 app.listen(PORT, () => {
