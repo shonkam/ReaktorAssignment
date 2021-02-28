@@ -1,11 +1,15 @@
 const express = require('express')
 const cors = require('cors')
+const timeout = require('connect-timeout')
 const axios = require('axios')
 const app = express()
+
 
 app.use(cors())
 app.use(express.json())
 app.use(express.static('build'))
+app.use(timeout('200s'))
+
 
 
 let productList
@@ -62,7 +66,7 @@ async function getProductList(productType) {
     return result
 }
 
-app.get('/products/gloves', async (request, response) => {
+app.get('/products/gloves', timeout('200s'), async (request, response) => {
     console.log('appget')
     try {
         const glovesList = await getProductList('gloves')
@@ -75,7 +79,7 @@ app.get('/products/gloves', async (request, response) => {
 })
 
 
-app.get('/products/facemasks', async (request, response) => {
+app.get('/products/facemasks', timeout('200s'), async (request, response) => {
     try {
         const facemaskList = await getProductList('facemasks')
         response.json(facemaskList)
@@ -86,7 +90,7 @@ app.get('/products/facemasks', async (request, response) => {
     }
 })
 
-app.get('/products/beanies', async (request, response) => {
+app.get('/products/beanies', timeout('200s'), async (request, response) => {
     try {
         const beaniesList = await getProductList('beanies')
         response.json(beaniesList)
@@ -97,7 +101,6 @@ app.get('/products/beanies', async (request, response) => {
     }
 })
 
-setTimeout(getProductList, 9999999)
 
 const PORT = (process.env.PORT || 3001)
 app.listen(PORT, () => {
