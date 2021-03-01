@@ -4,7 +4,7 @@
 
 ## Availability
 
-Project is deployed and accessable in [Heroku](https://warehouse-listing-assignment.herokuapp.com/) but because of the Herokus´ own restrictions on request timeouts which appears to be too time consuming for me at this moment, the app is only usable in localhost
+Project is deployed and accessable in [Heroku](https://warehouse-listing-assignment.herokuapp.com/), but because of the Heroku´s own restrictions for request timeouts which appears to be too time consuming for me to resolve at this moment, the app is only usable in localhost
 
 ![Image](media/screenshot2.jpg)
 
@@ -23,25 +23,25 @@ Project is deployed and accessable in [Heroku](https://warehouse-listing-assignm
 
 ## About the app
 
-The basic idea is that the wanted product type to be listed is selected in the client
+Firstly the user selects the wanted product type to be listed in the client
 
-After this the client sents a request to a server which will take care of API-calls to the customer´s badapi
+After this the client sents a request to a server which will take care of API-calls to the customer´s api
 
-Server will make multiple requests and will build a single array containing all the product information including its availability
+Server will make multiple requests and will build a single array containing all the product information including it´s availability
 
-Server will then return this array and the client will render this array into a table
+Server will then return this array to the client and it will then render this array into a table, which contains all the entries by selected product type
 
 ## Evaluation
 
-Over 95% of the work was done in 2 days and that shows in for example in error handling and as a structure of the project
+Over 95% of the work was done in 2 days and it shows in for example in error handling and as a structure of the project
 
 The solution is great by presenting all the entries by product type at once and handling all the data processing in the server side
 
-The obvious con is that since the api which provides the availability info is so incredibly slow, the server can´t provide response fast
+The obvious con is that since the api which provides the availability info is so incredibly slow, the server is unable to provide a response fast
 
 ## Closing
 
-I had a great 2 days while working on this assignment! While I´m not happy with the result as it certainly lacks certain aspects which would require some time to think through, I definitely learned and gained experience working with web development while working on this assignment
+I had a great 2 days while working on this assignment! While I´m not happy with the result as it certainly lacks certain aspects which would require some time from me to think through, I definitely learned and gained experience working on web development while working on this assignment
 
 ## Assignment
 
