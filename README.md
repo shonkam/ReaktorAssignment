@@ -4,7 +4,7 @@
 
 ## Availability
 
-Project is deployed and accessable in [Heroku](https://warehouse-listing-assignment.herokuapp.com/) but because of the Herokus´ own restrictions on request timeouts which appears to be too time consuming for me at this moment, the app is only usable in locahost
+Project is deployed and accessable in [Heroku](https://warehouse-listing-assignment.herokuapp.com/) but because of the Herokus´ own restrictions on request timeouts which appears to be too time consuming for me at this moment, the app is only usable in localhost
 
 ![Image](media/screenshot2.jpg)
 
@@ -18,7 +18,7 @@ Project is deployed and accessable in [Heroku](https://warehouse-listing-assignm
 
 * npm start
 
-* Application is accessable in http://localhost:3001/
+* Application is accessible in http://localhost:3001/
 
 
 ## About the app
@@ -41,7 +41,7 @@ The obvious con is that since the api which provides the availability info is so
 
 ## Closing
 
-I had a great 2 days while working on this assignment! While I´m not happy with the result as it certainly lacks aspects which would require some time to think through, I definitely learned and gained experience working with web development
+I had a great 2 days while working on this assignment! While I´m not happy with the result as it certainly lacks certain aspects, which would require some time to think through, I definitely learned and gained experience working with web development
 
 ## Assignment
 
@@ -55,7 +55,9 @@ The client does not have a ready-made API for this purpose. Instead, they have t
 API documentation is as follows
 
 GET /v2/products/:category – Return a listing of products in a given category.
+
 GET /v2/availability/:manufacturer – Return a list of availability info.
+
 The APIs are running at https://bad-api-assignment.reaktor.com/.
 Your task is to implement a web application that fits the client brief and host the running solution somewhere where it can be accessed publicly (e.g. Heroku). Please include a link to the source code and the running application in your application.
 
