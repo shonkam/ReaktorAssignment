@@ -33,7 +33,7 @@ Server will then return this array and the client will render this array into a 
 
 ## Evaluation
 
-Over 95% of the work has been done in 2 days and that shows for example in error handling and as a lack of well structured project
+Over 95% of the work was done in 2 days and that shows in for example in error handling and as a structure of the project
 
 The solution is great by presenting all the entries by product type at once and handling all the data processing in the server side
 
@@ -41,7 +41,7 @@ The obvious con is that since the api which provides the availability info is so
 
 ## Closing
 
-I had a great 2 days while working on this assignment! While I´m not happy with the result as it certainly lacks certain aspects, which would require some time to think through, I definitely learned and gained experience working with web development
+I had a great 2 days while working on this assignment! While I´m not happy with the result as it certainly lacks certain aspects which would require some time to think through, I definitely learned and gained experience working with web development while working on this assignment
 
 ## Assignment
 
